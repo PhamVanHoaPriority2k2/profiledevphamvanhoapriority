@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile - Premium Verified</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-green: #006400;
+            --bright-green: #00BC3C;
+            --bg-color: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 2px solid transparent; 
+            transition: all 0.4s ease;
+        }
+
+        /* Hiệu ứng khung sáng xanh lá cây đậm */
+        .profile-card:hover {
+            border-color: var(--dark-green);
+            box-shadow: 0 0 30px rgba(0, 100, 0, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .avatar-container img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--dark-green);
+            padding: 4px;
+            margin-bottom: 15px;
+        }
+
+        .name-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 5px;
+        }
+        
+        .name-wrapper h2 { margin: 0; font-size: 1.6rem; color: #111827; }
+
+        /* FULLSTACK DEVELOPER màu xanh lá cây đậm */
+        .job-title {
+            color: var(--dark-green);
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .info-container { text-align: left; }
+
+        .info-box {
+            background: #f8fafc;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            border-left: 5px solid var(--dark-green);
+        }
+
+        .label { font-weight: 600; color: #64748b; font-size: 0.85rem; }
+        .value { font-weight: 500; color: #1f2937; }
+
+        /* Mạng xã hội dùng ảnh tự cung cấp */
+        .social-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        .social-bar a img {
+            width: 35px; /* Điều chỉnh kích thước icon ảnh tại đây */
+            height: 35px;
+            object-fit: contain;
+            transition: 0.3s;
+            filter: grayscale(20%);
+        }
+        .social-bar a:hover img {
+            transform: scale(1.2);
+            filter: grayscale(0%);
+        }
+
+        .footer-section {
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* 090 123 4567 và email màu xanh lá cây đậm */
+        .highlight-green {
+            color: var(--dark-green);
+            font-weight: 700;
+        }
+
+        /* Ảnh card có thể nhấp vào */
+        .verified-card-link {
+            display: inline-block;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .verified-card-link:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+        .footer-card-img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="avatar-container">
+            <img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/640393024_892467150367357_919247512337667019_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeE9PW11Hyw8rrW_E4sw92pM1VH6XdOTWAHVUfpd05NYAbwmZ8WghvPT6f7MtlPAlgJD7uVg3Yx4XWkbAKEJLe55&_nc_ohc=htUoyyCN41kQ7kNvwGKWE-n&_nc_oc=AdknrcIPyX06f_j0dAVLE-zTBAa43hUt-mT8m4zxHlRRNc3UXQXI8rL_p0PBTb8E8qE&_nc_zt=23&_nc_ht=scontent.fhan2-5.fna&_nc_gid=Y4wiFC6S8Zn20pwohTV2fw&oh=00_Afsr23afGI0CE224JWXo4P0kMEJHsFskoQ7jqnXKOEj6QA&oe=69A1C7E4" alt="Avatar">
+        </div>
+
+        <div class="name-wrapper">
+            <h2>PHẠM VĂN HOÀ</h2>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.75738 11.7976C7.37538 11.3986 6.74338 11.3826 6.34338 11.7646C5.94438 12.1456 5.92838 12.7786 6.31038 13.1786L9.4665 16.1912C9.6545 16.3882 9.9145 16.5002 10.1865 16.5012H10.1905C10.4615 16.5012 10.7205 16.3912 10.9085 16.1962L17.6855 9.19624C18.0695 8.79924 18.0595 8.16624 17.6625 7.78224C17.2645 7.39724 16.6315 7.40924 16.2485 7.80524L10.1955 14.0582L7.75738 11.7976ZM12.0004 2.00146C6.47738 2.00146 2.00038 6.47846 2.00038 12.0015C2.00038 17.5235 6.47738 22.0015 12.0004 22.0015C17.5234 22.0015 22.0004 17.5235 22.0004 12.0015C22.0004 6.47846 17.5234 2.00146 12.0004 2.00146Z" fill="#00BC3C"></path> 
+            </svg>
+        </div>
+
+        <div class="job-title">FULLSTACK DEVELOPER</div>
+
+        <div class="info-container">
+            <div class="info-box"><span class="label">Ngày sinh:</span> <span class="value">22/12/2002</span></div>
+            <div class="info-box"><span class="label">Mã số thuế cá nhân:</span> <span class="value">8802493379</span></div>
+            <div class="info-box"><span class="label">Số định danh:</span> <span class="value">03520200533</span></div>
+            <div class="info-box"><span class="label">Địa chỉ:</span> <span class="value">TDP YÊN LẠC,PHƯỜNG LÊ HỒ,TỈNH NINH BÌNH</span></div>
+            <div class="info-box"><span class="label">Di động / Fax:</span> <span class="value">0869.719.516</span></div>
+        </div>
+
+        <div class="social-bar">
+            <a href="https://www.facebook.com/phamvanhoapriority2002/" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7f/f5/05/7ff50514-1397-c02b-35fe-5eb1bcb68d10/Icon-Production-0-0-1x_U007epad-0-1-0-85-220.png/350x350.png" alt="FB"></a>
+            <a href="https://zalo.me/0869719516" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/15/8f/83/158f83c5-ed7a-ca84-257e-4967495ba370/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.png" alt="Zalo"></a>
+            <a href="https://m.me/phamvanhoapriority2002="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/27/3d/12273d48-0889-3bfe-c78f-4a51d5db0d4a/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/350x350.png" alt="Messenger"></a>
+            <a href="https://t.me/+84869719516" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ca/ec/17/caec171c-e344-0428-0797-2259fd00dc3b/Telegram-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/350x350.png" alt="Telegram"></a>
+            <a href="https://wa.me/84869719516" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/de/08/3f/de083fa7-c179-9c25-7093-576eb965123e/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/350x350.png" alt="WhatsApp"></a>
+        </div>
+
+        <div class="footer-section">
+            <p>SĐT: <span class="highlight-green">0869 719 516</span></p>
+            <p>Email: <span class="highlight-green">phamvanhoapriority@gmail.com</span></p>
+            
+            <a href="https://tinnhiemmang.vn/danh-ba-tin-nhiem/shopee" target="_blank" class="verified-card-link">
+                <img src="https://static.mediacdn.vn/mst/images/card.png" alt="Xác thực" class="footer-card-img">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
